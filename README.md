@@ -8,7 +8,7 @@ Sistema orientado a objetos en Python, **sin base de datos**, que gestiona clien
 
 | Autor | Grupo |
 |---|---|
-| Jose Luis Rodríguez Vásquez | _[N.º de grupo]_ |
+| Jose Luis Rodríguez Vásquez | 213023_49 |
 
 ## Requisitos
 
