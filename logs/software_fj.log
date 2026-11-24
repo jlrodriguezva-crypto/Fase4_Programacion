@@ -1,0 +1,87 @@
+2026-10-26 08:38:57 | INFO     | simulacion | ===== INICIO DE LA SIMULACIÓN =====
+2026-10-26 08:38:57 | INFO     | gestor     | Registro de cliente 'Ana María Torres' completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Registro de cliente 'Ana María Torres'
+2026-10-26 08:38:57 | INFO     | gestor     | Registro de cliente 'Carlos Pérez' completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Registro de cliente 'Carlos Pérez'
+2026-10-26 08:38:57 | ERROR    | gestor     | Registro de cliente 'Luis Gómez' FALLÓ: [SFJ-101] Correo inválido: 'luis.gomez.correo.com'.
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Registro de cliente 'Luis Gómez'
+2026-10-26 08:38:57 | ERROR    | gestor     | Registro de cliente 'Marta Ruiz' FALLÓ: [SFJ-101] Documento inválido: 'ABC123'. Debe tener entre 6 y 12 dígitos.
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Registro de cliente 'Marta Ruiz'
+2026-10-26 08:38:57 | ERROR    | gestor     | Registro de cliente 'Carlos Pérez Duplicado' FALLÓ: [SFJ-203] Ya existe un cliente con el documento 79123456.
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Registro de cliente 'Carlos Pérez Duplicado'
+2026-10-26 08:38:57 | INFO     | gestor     | Creación de servicio SalaReserva completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de servicio SalaReserva
+2026-10-26 08:38:57 | INFO     | gestor     | Creación de servicio AlquilerEquipo completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de servicio AlquilerEquipo
+2026-10-26 08:38:57 | INFO     | gestor     | Creación de servicio AsesoriaEspecializada completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de servicio AsesoriaEspecializada
+2026-10-26 08:38:57 | ERROR    | gestor     | Creación de servicio SalaReserva FALLÓ: [SFJ-102] La tarifa por hora debe ser un número positivo (recibido: -5000).
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de servicio SalaReserva
+2026-10-26 08:38:57 | ERROR    | gestor     | Creación de servicio Servicio FALLÓ: [SFJ-102] 'Servicio' no es un servicio concreto que pueda instanciarse.
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de servicio Servicio
+2026-10-26 08:38:57 | INFO     | gestor     | Creación de reserva (CLI-0001, SER-0001, 3 h) completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de reserva (CLI-0001, SER-0001, 3 h)
+2026-10-26 08:38:57 | INFO     | reserva    | Reserva RES-0001 confirmada (cliente CLI-0001, servicio SER-0001)
+2026-10-26 08:38:57 | DEBUG    | reserva    | Intento de confirmación de RES-0001 finalizado
+2026-10-26 08:38:57 | INFO     | gestor     | Confirmación de reserva RES-0001 completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Confirmación de reserva RES-0001
+2026-10-26 08:38:57 | INFO     | reserva    | Reserva RES-0001 procesada. Costo total: $192.780
+2026-10-26 08:38:57 | DEBUG    | reserva    | Intento de procesamiento de RES-0001 finalizado
+2026-10-26 08:38:57 | INFO     | gestor     | Procesamiento de reserva RES-0001 completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Procesamiento de reserva RES-0001
+2026-10-26 08:38:57 | INFO     | gestor     | Creación de reserva (CLI-0002, SER-0002, 4 h) completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de reserva (CLI-0002, SER-0002, 4 h)
+2026-10-26 08:38:57 | DEBUG    | servicios  | Stock de 'Portátil Dell Latitude' actualizado a 3 unidades
+2026-10-26 08:38:57 | INFO     | reserva    | Reserva RES-0002 confirmada (cliente CLI-0002, servicio SER-0002)
+2026-10-26 08:38:57 | DEBUG    | reserva    | Intento de confirmación de RES-0002 finalizado
+2026-10-26 08:38:57 | INFO     | gestor     | Confirmación de reserva RES-0002 completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Confirmación de reserva RES-0002
+2026-10-26 08:38:57 | DEBUG    | servicios  | Stock de 'Portátil Dell Latitude' restaurado a 5 unidades
+2026-10-26 08:38:57 | INFO     | reserva    | Reserva RES-0002 cancelada
+2026-10-26 08:38:57 | INFO     | gestor     | Cancelación de reserva RES-0002 completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Cancelación de reserva RES-0002
+2026-10-26 08:38:57 | ERROR    | gestor     | Creación de reserva (CLI-0001, SER-0001, 0 h) FALLÓ: [SFJ-201] No se pudo crear la reserva: Duración inválida (0): debe estar entre 1 y 12 horas para 'Sala Ejecutiva'. | causa: ServicioInvalidoError("Duración inválida (0): debe estar entre 1 y 12 horas para 'Sala Ejecutiva'.")
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de reserva (CLI-0001, SER-0001, 0 h)
+2026-10-26 08:38:57 | ERROR    | gestor     | Creación de reserva (CLI-0001, SER-0001, 2 h) FALLÓ: [SFJ-201] No se pudo crear la reserva: Asistentes inválidos (12): la sala 'Sala Ejecutiva' admite de 1 a 10. | causa: ServicioInvalidoError("Asistentes inválidos (12): la sala 'Sala Ejecutiva' admite de 1 a 10.")
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de reserva (CLI-0001, SER-0001, 2 h)
+2026-10-26 08:38:57 | ERROR    | gestor     | Creación de reserva (CLI-0001, None, None h) FALLÓ: [SFJ-201] Parámetros faltantes: se requieren cliente_id, servicio_id y horas.
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de reserva (CLI-0001, None, None h)
+2026-10-26 08:38:57 | ERROR    | gestor     | Creación de reserva (CLI-9999, SER-0001, 2 h) FALLÓ: [SFJ-203] No existe el cliente con identificador 'CLI-9999'.
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de reserva (CLI-9999, SER-0001, 2 h)
+2026-10-26 08:38:57 | INFO     | gestor     | Creación de reserva (CLI-0002, SER-0002, 2 h) completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de reserva (CLI-0002, SER-0002, 2 h)
+2026-10-26 08:38:57 | DEBUG    | reserva    | Intento de confirmación de RES-0003 finalizado
+2026-10-26 08:38:57 | ERROR    | gestor     | Confirmación de reserva RES-0003 FALLÓ: [SFJ-201] No se pudo confirmar RES-0003: Stock insuficiente de 'Portátil Dell Latitude': solicitadas 9, disponibles 5. | causa: ServicioNoDisponibleError("Stock insuficiente de 'Portátil Dell Latitude': solicitadas 9, disponibles 5.")
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Confirmación de reserva RES-0003
+2026-10-26 08:38:57 | ERROR    | gestor     | Procesamiento de reserva RES-0003 FALLÓ: [SFJ-203] No se puede procesar RES-0003: debe estar 'Confirmada' y está 'Pendiente'.
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Procesamiento de reserva RES-0003
+2026-10-26 08:38:57 | ERROR    | gestor     | Cancelación de reserva RES-0002 FALLÓ: [SFJ-203] No se puede cancelar RES-0002: su estado actual es 'Cancelada'.
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Cancelación de reserva RES-0002
+2026-10-26 08:38:57 | INFO     | gestor     | Cambio de disponibilidad de SER-0003 a False completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Cambio de disponibilidad de SER-0003 a False
+2026-10-26 08:38:57 | INFO     | gestor     | Creación de reserva (CLI-0001, SER-0003, 2 h) completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Creación de reserva (CLI-0001, SER-0003, 2 h)
+2026-10-26 08:38:57 | DEBUG    | reserva    | Intento de confirmación de RES-0004 finalizado
+2026-10-26 08:38:57 | ERROR    | gestor     | Confirmación de reserva RES-0004 FALLÓ: [SFJ-201] No se pudo confirmar RES-0004: El servicio 'Arquitectura de software' no está disponible actualmente. | causa: ServicioNoDisponibleError("El servicio 'Arquitectura de software' no está disponible actualmente.")
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Confirmación de reserva RES-0004
+2026-10-26 08:38:57 | INFO     | gestor     | Cambio de disponibilidad de SER-0003 a True completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Cambio de disponibilidad de SER-0003 a True
+2026-10-26 08:38:57 | INFO     | reserva    | Reserva RES-0004 confirmada (cliente CLI-0001, servicio SER-0003)
+2026-10-26 08:38:57 | DEBUG    | reserva    | Intento de confirmación de RES-0004 finalizado
+2026-10-26 08:38:57 | INFO     | gestor     | Confirmación de reserva RES-0004 completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Confirmación de reserva RES-0004
+2026-10-26 08:38:57 | DEBUG    | reserva    | Intento de procesamiento de RES-0004 finalizado
+2026-10-26 08:38:57 | ERROR    | gestor     | Procesamiento de reserva RES-0004 FALLÓ: [SFJ-201] No se pudo procesar RES-0004: Descuento fuera de rango: 1.5 (use 0 a <1). | causa: CalculoInconsistenteError('Descuento fuera de rango: 1.5 (use 0 a <1).')
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Procesamiento de reserva RES-0004
+2026-10-26 08:38:57 | INFO     | reserva    | Reserva RES-0004 procesada. Costo total: $406.980
+2026-10-26 08:38:57 | DEBUG    | reserva    | Intento de procesamiento de RES-0004 finalizado
+2026-10-26 08:38:57 | INFO     | gestor     | Procesamiento de reserva RES-0004 completada correctamente
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Procesamiento de reserva RES-0004
+2026-10-26 08:38:57 | CRITICAL | gestor     | Error inesperado en 'Cálculo directo de costo': TypeError("Servicio.calcular_costo() missing 1 required positional argument: 'horas'")
+Traceback (most recent call last):
+  File "/home/claude/fase4/SoftwareFJ/software_fj/gestor.py", line 49, in ejecutar_seguro
+    valor = funcion(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Servicio.calcular_costo() missing 1 required positional argument: 'horas'
+2026-10-26 08:38:57 | DEBUG    | gestor     | Fin de la operación: Cálculo directo de costo
+2026-10-26 08:38:57 | INFO     | simulacion | ===== FIN DE LA SIMULACIÓN: 32 operaciones (17 OK, 15 con error) =====
